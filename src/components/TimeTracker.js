@@ -65,7 +65,7 @@ const TimeTracker = () => {
         <FiBell
           size={24}
           color={notificationsEnabled ? "white" : "yellow"}
-          style={{ marginLeft: "-35px" }}
+          style={{ marginLeft: "-3%" }}
         />{" "}
       </div>
     </div>

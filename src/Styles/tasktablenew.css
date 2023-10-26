@@ -222,15 +222,15 @@ table tr:hover {
 
 /* Styling for the "Next" button */
 .pagination-button1 {
-  position: relative;
-  left: -130%;
+  position: absolute;
+  left: -480%;
   font-size: 14px;
 }
 
 /* Styling for the "Previous" button */
 .pagination-button2 {
-  position: relative;
-  right: -170%;
+  position: absolute;
+  right: -900%;
   font-size: 14px;
 }
 
@@ -389,7 +389,7 @@ table tr:hover {
   padding: 5px; /* Add padding to create space between the content and the border */
   border-radius: 5px;
   width: 25%;
-  margin-left: 5%;
+  margin-left: -2%;
   margin-top: -75px;
 }
 .filter-icon {

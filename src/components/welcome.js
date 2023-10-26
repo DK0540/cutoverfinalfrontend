@@ -19,8 +19,8 @@ function Welcome() {
   });
   const userId = userData.user._id;
   const userName = userData.user.username;
-  console.log(userId);
-  console.log(userName);
+  // console.log(userId);
+  // console.log(userName);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -47,11 +47,11 @@ function Welcome() {
 
         setTaskCounts({ total, inProgress, incomplete, completed, issues });
 
-        console.log("Total Tasks:", total);
-        console.log("Total In Progress:", inProgress);
-        console.log("Total Incomplete:", incomplete);
-        console.log("Total Completed:", completed); // Added line
-        console.log("Total Issues:", issues);
+        // console.log("Total Tasks:", total);
+        // console.log("Total In Progress:", inProgress);
+        // console.log("Total Incomplete:", incomplete);
+        // console.log("Total Completed:", completed); // Added line
+        // console.log("Total Issues:", issues);
       } catch (error) {
         console.error("Error fetching data:", error);
       }

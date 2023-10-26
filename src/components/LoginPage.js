@@ -22,7 +22,7 @@ const LoginPage = () => {
 
   const handleLoginSuccess = async (userData) => {
     window.alert("Login successful!");
-    console.log(userData);
+    // console.log(userData);
 
     const userEmail = formData.email;
     setUserData(userData);
