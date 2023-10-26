@@ -53,16 +53,16 @@
 }
 
 .active-icon::before {
+  border-radius: 26px;
   content: "";
   position: absolute;
   top: 0;
-  right: -22px;
+  right: -42px;
   bottom: 0;
-  width: 110px;
+  width: 139px;
   background-color: rgb(255, 255, 255);
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
   z-index: 0;
+  height: 52px;
 }
 
 .Sidebar div {

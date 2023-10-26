@@ -62,7 +62,11 @@ const TimeTracker = () => {
   return (
     <div>
       <div onClick={toggleNotifications}>
-        <FiBell size={24} color={notificationsEnabled ? "white" : "yellow"} />
+        <FiBell
+          size={24}
+          color={notificationsEnabled ? "white" : "yellow"}
+          style={{ marginLeft: "-35px" }}
+        />{" "}
       </div>
     </div>
   );

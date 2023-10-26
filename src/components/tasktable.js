@@ -357,15 +357,8 @@ function TaskTable() {
         onClick={handleDeleteSelectedTasks}
         disabled={!selectedTasks.length}
       >
-        Delete Selected Tasks
+        Delete
       </button>
-      {/* <button
-        className="button"
-        onClick={handleSendEmail}
-        disabled={!selectedTasks.length}
-      >
-        Send Mail
-      </button> */}
       <button className="button" onClick={fetchData}>
         Reload Tasks
       </button>

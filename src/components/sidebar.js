@@ -5,11 +5,11 @@ import { IoSpeedometerSharp } from "react-icons/io5";
 import { AiOutlineMenu, AiOutlineLogout } from "react-icons/ai";
 import { FaSave } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+
 function Sidebar() {
   const [activeComponent, setActiveComponent] = useState("");
   const navigate = useNavigate();
   useEffect(() => {
-    // Extract the path from the URL to determine the active component
     const currentPath = window.location.pathname;
     setActiveComponent(currentPath);
   }, []);
