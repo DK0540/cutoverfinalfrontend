@@ -111,6 +111,6 @@
 }
 .time {
   position: relative;
-  left: -50px;
-  cursor: pointer;
+  left: -5%;
+  cursor: pointer;
 }

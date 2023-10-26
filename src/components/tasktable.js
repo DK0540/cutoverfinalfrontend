@@ -447,6 +447,7 @@ function TaskTable() {
           <p className="pp">progress</p>
         </div>
       </div>
+
       <div className="pagination">
         <button
           className="pagination-button1"
@@ -479,6 +480,7 @@ function TaskTable() {
           Next <FaArrowRight />
         </button>
       </div>
+
       <div className="last">
         <div className="user-input">
           <img

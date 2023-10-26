@@ -35,7 +35,7 @@ table tr:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/*popup css*/
+
 /* popup.css */
 .popup-overlay {
   position: fixed;
@@ -115,7 +115,7 @@ table tr:hover {
   background-color: #218838; /* Darker shade of green on hover */
 }
 
-/*file upload*/
+
 .file-input-label {
   display: inline-block;
   padding: 4px 12px;
@@ -180,7 +180,7 @@ table tr:hover {
   border-radius: 50px 50px 1px;
   width: 50%;
   left: 30%;
-  top: 86%;
+  top: 90%;
 }
 
 @keyframes blink {
@@ -199,15 +199,42 @@ table tr:hover {
   animation: blink 1s infinite;
 }
 /* Styling for the pagination container */
-.pagination {
+.l {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start; 
+  align-items: center; 
+  border: 1px solid #e6e6e6; 
+  padding: 1px;
+  border-radius: 5px;
+  width: 50%;
   position: fixed;
-  top: 80%;
-  left: 40%;
+  left: 27%;
+  top: calc(75% + 20px); /* Calculate top position with margin of 20px */
 }
 
-/* Styling for the pagination buttons */
+@media (max-width: 768px) {
+  .l {
+    width: 80%; /* Adjust width for smaller screens */
+    left: 10%; /* Adjust left position for smaller screens */
+  }
+}
+
+.pagination {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
+  z-index: 999;
+  padding: 10px;
+ 
+}
+
 .pagination button {
   background-color: #ffffff;
   border: none;
@@ -219,19 +246,12 @@ table tr:hover {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* Styling for the "Next" button */
 .pagination-button1 {
-  position: absolute;
-  left: -480%;
-  font-size: 14px;
+  margin-right: 10px; /* Add margin-right for space between buttons */
 }
 
-/* Styling for the "Previous" button */
 .pagination-button2 {
-  position: absolute;
-  right: -900%;
-  font-size: 14px;
+  margin-left: 10px; /* Add margin-left for space between buttons */
 }
 
 /* Styling for the active page button */
@@ -257,10 +277,29 @@ table tr:hover {
   height: 15px;
   margin-right: 10px;
 }
+
 .pagination-button:last-child svg {
   margin-right: 0;
   margin-left: 10px;
 }
+
+/* Additional Styles for Responsiveness */
+
+@media (max-width: 768px) {
+  .pagination {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagination button {
+    margin: 4px 0;
+  }
+}
+/* Add other pagination styles here... */
+
+
+
+
 
 /* CSS for the custom checkbox */
 .custom-checkbox {
@@ -314,6 +353,8 @@ table tr:hover {
   color: red;
 }
 
+
+
 .normal-priority {
   color: rgb(202, 202, 26);
 }
@@ -349,19 +390,7 @@ table tr:hover {
   font-weight: 400;
 }
 
-.l {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start; /* Align items to the start of the flex container */
-  align-items: center; /* Vertically center items in the flex container */
-  border: 1px solid #e6e6e6; /* Added a border for visual separation */
-  padding: 1px;
-  border-radius: 5px;
-  width: 50%;
-  position: absolute;
-  left: 27%;
-  top: 460px;
-}
+
 .vertical-line {
   width: 0.2px; /* Adjust the width of the vertical line as needed */
   background-color: #afafaf; /* Line color (black in this example) */
@@ -389,7 +418,7 @@ table tr:hover {
   padding: 5px; /* Add padding to create space between the content and the border */
   border-radius: 5px;
   width: 25%;
-  margin-left: -2%;
+  margin-left: 1.5%;
   margin-top: -75px;
 }
 .filter-icon {
@@ -402,5 +431,5 @@ table tr:hover {
 .filter-text {
   font-size: 14px;
   font-weight: 400;
-  color: #333;
+  color: #333;
 }
